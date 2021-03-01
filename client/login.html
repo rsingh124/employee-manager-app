@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <style>
+      .form-control{
+        padding: 10px;
+      }
+
+      .main-div{
+        text-align: center; 
+        margin-top: 17%;
+      }
+    </style>
+    <div class="main-div">
+      <h1>Account Login</h1>
+      <form id="login" class="login" method="POST" action="/login">
+        <div class="form-control">
+          <label for="email">account email</label>
+          <input
+          required
+            id="email"
+            name="email"
+            type="email"
+            placeholder="your_email@workspace.com"
+          />
+        </div>
+        <div class="form-control">
+            <label for="password">account password</label>
+            <input
+            required
+              id="password"
+              name="password"
+              type="password"
+              placeholder="account password"
+            />
+          </div>
+          <div class="form-control">
+              <button type=submit>login</button>
+          </div>
+      </form>
+    </div>
+  </body>
+</html>
